@@ -1,6 +1,7 @@
-#My Personal Website
+# My Personal Website
 
-##TODO:
+## TODO:
+
 -About Me
 -Projects
 -Blog
