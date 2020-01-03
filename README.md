@@ -5,3 +5,4 @@
 - Projects
 - Blog
 - Resume
+- Deployment
