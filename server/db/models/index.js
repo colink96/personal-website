@@ -1,5 +1,6 @@
 const User = require('./user')
 const Project = require('./projects')
+const Experience = require('./experience')
 
 /**
  * If we had any associations to make, this would be a great place to put them!
@@ -16,5 +17,6 @@ const Project = require('./projects')
  */
 module.exports = {
   User,
-  Project
+  Project,
+  Experience
 }
