@@ -3,9 +3,10 @@ import React from 'react'
 export class AboutMe extends React.Component {
   render() {
     return (
-      <div>
+      <div id="about" data-color="yankeeblue" className="panel">
         <h1>About Me</h1>
         <div>
+          <img id="profileimg" src="/JGonz_6079.jpg" />
           <p>
             My name is Colin Kim and I am a full-stack software engineer and
             competitive bboy (breakdancer) based in New York City.
@@ -28,6 +29,7 @@ export class AboutMe extends React.Component {
           <p>Here are some of the technologies I have been working with:</p>
           <ul>
             <li>JavaScript (ES6+)</li>
+            <li>Python</li>
             <li>Node.js</li>
             <li>Express</li>
             <li>PostgreSQL</li>

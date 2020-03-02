@@ -4,20 +4,54 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {logout} from '../store'
 
-const Navbar = ({handleClick, isLoggedIn}) => (
-  <div>
-    <h1>Colin Kim</h1>
-    <h3>Full-Stack Software Engineer, and Bboy</h3>
+const scrollMe = id => {
+  let el = document.getElementById(id)
+  el.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'})
+}
+
+const Navbar = () => (
+  <div id="nav">
     <nav>
       <div>
         {/* The navbar will show these links before you log in */}
-        <Link to="/home">Home</Link>
-        <Link to="/about">About Me</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/experience">Experience</Link>
+        <a
+          className="navlink"
+          onClick={() => {
+            scrollMe('home')
+          }}
+          id="homenav"
+        >
+          Home
+        </a>
+        <a
+          className="navlink"
+          onClick={() => {
+            scrollMe('projects')
+          }}
+          id="projectsnav"
+        >
+          Projects
+        </a>
+        <a
+          className="navlink"
+          onClick={() => {
+            scrollMe('experiences')
+          }}
+          id="experiencesnav"
+        >
+          Experience
+        </a>
+        <a
+          className="navlink"
+          onClick={() => {
+            scrollMe('about')
+          }}
+          id="aboutnav"
+        >
+          About Me
+        </a>
       </div>
     </nav>
-    <hr />
   </div>
 )
 

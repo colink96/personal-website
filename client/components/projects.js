@@ -10,7 +10,7 @@ class DisconnectedProjects extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="projects">
         <h1>Projects</h1>
         {this.props.allProjects &&
           this.props.allProjects.map(project => {
