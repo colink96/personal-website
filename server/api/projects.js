@@ -10,3 +10,12 @@ router.get('/', async (req, res, next) => {
     next(error)
   }
 })
+
+router.get('/:id', async (req, res, next) => {
+  try {
+    const project = await Project.findByPk(req.params.id)
+    res.send(project)
+  } catch (error) {
+    next(error)
+  }
+})

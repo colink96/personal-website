@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {getAllProjects} from '../store/project'
+import {getAllProjects, getOneProject} from '../store/project'
 import {Project} from './project'
 
 class DisconnectedProjects extends React.Component {
@@ -10,21 +10,25 @@ class DisconnectedProjects extends React.Component {
 
   render() {
     return (
-      <div id="projects">
-        <h1>Projects</h1>
-        {this.props.allProjects &&
-          this.props.allProjects.map(project => {
-            return (
-              <Project
-                key={project.id}
-                title={project.title}
-                description={project.description}
-                stack={project.stack}
-                url={project.url}
-                github={project.github}
-              />
-            )
-          })}
+      <div id="projects" className="panel" data-color="lavender">
+        <h1>PROJECTS</h1>
+        <div id="projects-container">
+          {this.props.allProjects &&
+            this.props.allProjects.map(project => {
+              return (
+                <Project
+                  key={project.id}
+                  img={project.img}
+                  title={project.title}
+                  description={project.description}
+                  stack={project.stack}
+                  url={project.url}
+                  github={project.github}
+                />
+              )
+            })}
+          <div id="project-viewer" />
+        </div>
       </div>
     )
   }
@@ -32,13 +36,15 @@ class DisconnectedProjects extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    allProjects: state.project.allProjects
+    allProjects: state.project.allProjects,
+    singleProject: state.project.singleProject
   }
 }
 
 const mapDispatchToProps = dispatch => {
   return {
-    getAllProjects: () => dispatch(getAllProjects())
+    getAllProjects: () => dispatch(getAllProjects()),
+    getOneProject: id => dispatch(getOneProject(id))
   }
 }
 

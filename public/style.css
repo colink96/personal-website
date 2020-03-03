@@ -1,16 +1,19 @@
-* {
-  font-family: 'Montserrat';
-}
-
 body {
+  background-image: url('/backdrop.png');
+  background-color: #5c80bc;
   color: white;
-  font-family: sans-serif;
   -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
+  font-family: 'Montserrat';
+  text-shadow: 1px 1px #183446;
 }
 
 a {
   text-decoration: none;
+}
+
+h2 {
+  font-family: 'Montserrat';
 }
 
 label {
@@ -23,13 +26,12 @@ nav a {
 }
 
 hr {
-  width: 20vw;
-  opacity: 0;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 2s;
+  width: 0vw;
+  -webkit-animation: wideout 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: wideout 2s; /* Firefox < 16 */
+  -ms-animation: wideout 2s; /* Internet Explorer */
+  -o-animation: wideout 2s; /* Opera < 12.1 */
+  animation: wideout 2s;
   animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
@@ -50,8 +52,18 @@ form div {
   border-radius: 80%;
 }
 
+.navlink {
+  transition: 0.3s;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .navlink:hover {
   cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 #nav {
@@ -61,6 +73,7 @@ form div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Karla';
 }
 
 #home {
@@ -134,7 +147,7 @@ form div {
 }
 
 #home-spacing {
-  height: 15vh;
+  height: 7vh;
 }
 
 #main {
@@ -151,23 +164,23 @@ form div {
 }
 
 .color-maxblue {
-  background-color: #38aecc;
+  background-color: #437c90;
 }
 
 .color-yankeeblue {
-  background-color: #183446;
+  background-color: #04080f;
 }
-.color-indigo {
-  background-color: #4332cf;
+.color-lavender {
+  background-color: #759fbc;
 }
 .color-blue {
-  background-color: #2f8fed;
+  background-color: #507dbc;
 }
 .color-green {
-  background-color: #4dcf42;
+  background-color: #1f5673;
 }
 .color-yellow {
-  background-color: #faeb33;
+  background-color: #037971;
 }
 .color-orange {
   background-color: #f19031;
@@ -177,7 +190,97 @@ form div {
 }
 
 #spacing {
-  height: 35vh;
+  height: 30vh;
+}
+
+#projects {
+  padding-top: 9vh;
+  display: flex;
+  width: 100vw;
+  height: 50vw;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 7vh;
+}
+
+#projects-container {
+  display: flex;
+  flex-direction: row;
+  width: 75vw;
+  height: 80vh;
+  overflow-x: scroll;
+  border-right: 2px white solid;
+  margin-right: 3vw;
+}
+
+#projects h1 {
+  flex: 1;
+  padding: 2vh;
+  margin-right: 1vw;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.project {
+  padding-top: 2vh;
+  margin-left: 3px;
+  margin-right: 3px;
+  display: flex;
+  min-width: 30vw;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Karla';
+  border-radius: 20px;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+.project-spacer {
+  height: 2vh;
+}
+
+.project:hover {
+  color: #093a3e;
+  text-shadow: none;
+  background: rgba(250, 250, 255, 0.5);
+}
+
+.project hr {
+  background-color: black;
+  height: 1px;
+  width: 2vw;
+  -webkit-animation: none; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: none; /* Firefox < 16 */
+  -ms-animation: none; /* Internet Explorer */
+  -o-animation: none; /* Opera < 12.1 */
+  animation: none;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+
+.project p {
+  margin: 4px;
+}
+
+.project-icon {
+  height: 15vh;
+  align-self: center;
+  border-radius: 5%;
+  padding: 1vh;
+  transition: 0.3s;
+}
+
+.project-icon:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#gitcon {
+  width: 2vw;
+  vertical-align: middle;
+}
+
+h1 {
+  align-self: center;
 }
 
 @keyframes fadein {
@@ -226,5 +329,54 @@ form div {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes wideout {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 20vw;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes wideout {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 20vw;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes wideout {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 20vw;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes wideout {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 20vw;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes wideout {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 20vw;
   }
 }
