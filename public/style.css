@@ -1,19 +1,24 @@
 body {
   background-image: url('/backdrop.png');
-  background-color: #5c80bc;
+  background-color: #437c90;
   color: white;
-  -webkit-transition: background-color 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   font-family: 'Montserrat';
   text-shadow: 1px 1px #183446;
 }
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 h2 {
   font-family: 'Montserrat';
+}
+
+h3 {
+  text-align: center;
 }
 
 label {
@@ -63,7 +68,8 @@ form div {
   padding-left: 10px;
   padding-right: 10px;
   background: rgba(255, 255, 255, 0.5);
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(20, 20, 30, 0.9);
+  text-shadow: none;
 }
 
 #nav {
@@ -169,24 +175,31 @@ form div {
 
 .color-yankeeblue {
   background-color: #04080f;
+  background-image: none;
 }
 .color-lavender {
   background-color: #759fbc;
+  background-image: url('backdrop2.png');
 }
 .color-blue {
   background-color: #507dbc;
+  background-image: none;
 }
 .color-green {
   background-color: #1f5673;
+  background-image: none;
 }
 .color-yellow {
   background-color: #037971;
+  background-image: none;
 }
 .color-orange {
   background-color: #f19031;
+  background-image: none;
 }
 .color-red {
   background-color: #f2293a;
+  background-image: none;
 }
 
 #spacing {
@@ -197,20 +210,21 @@ form div {
   padding-top: 9vh;
   display: flex;
   width: 100vw;
-  height: 50vw;
+  height: 80vh;
   justify-content: space-between;
   flex-direction: row;
-  margin-bottom: 7vh;
+  padding-bottom: 10vh;
 }
 
 #projects-container {
   display: flex;
   flex-direction: row;
-  width: 75vw;
-  height: 80vh;
-  overflow-x: scroll;
+  /* width: 75vw; */
+  overflow: auto;
   border-right: 2px white solid;
+  border-left: 2px white solid;
   margin-right: 3vw;
+  border-radius: 20px;
 }
 
 #projects h1 {
@@ -222,17 +236,17 @@ form div {
 }
 
 .project {
-  padding-top: 2vh;
-  margin-left: 3px;
-  margin-right: 3px;
   display: flex;
-  min-width: 30vw;
+  overflow: auto;
+  min-width: 300px;
+  min-height: 99%;
   flex-direction: column;
   text-align: center;
   font-family: 'Karla';
   border-radius: 20px;
   border: 2px solid white;
   transition: 0.3s;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .project-spacer {
@@ -242,7 +256,12 @@ form div {
 .project:hover {
   color: #093a3e;
   text-shadow: none;
-  background: rgba(250, 250, 255, 0.5);
+  background: rgba(250, 250, 255, 0.7);
+}
+
+.project a {
+  color: darkcyan;
+  text-shadow: none;
 }
 
 .project hr {
@@ -263,7 +282,7 @@ form div {
 }
 
 .project-icon {
-  height: 15vh;
+  height: 10vh;
   align-self: center;
   border-radius: 5%;
   padding: 1vh;
@@ -277,6 +296,11 @@ form div {
 #gitcon {
   width: 2vw;
   vertical-align: middle;
+  transition: 0.5s;
+}
+
+#gitcon:hover {
+  width: 3vw;
 }
 
 h1 {
@@ -337,7 +361,7 @@ h1 {
     width: 0vw;
   }
   to {
-    width: 20vw;
+    width: 40vw;
   }
 }
 
@@ -347,7 +371,7 @@ h1 {
     width: 0vw;
   }
   to {
-    width: 20vw;
+    width: 40vw;
   }
 }
 
@@ -357,7 +381,7 @@ h1 {
     width: 0vw;
   }
   to {
-    width: 20vw;
+    width: 40vw;
   }
 }
 
@@ -367,7 +391,7 @@ h1 {
     width: 0vw;
   }
   to {
-    width: 20vw;
+    width: 40vw;
   }
 }
 
@@ -377,6 +401,58 @@ h1 {
     width: 0vw;
   }
   to {
-    width: 20vw;
+    width: 40vw;
   }
+}
+
+#experiences {
+  display: flex;
+  flex-direction: row;
+  padding-top: 7vh;
+  text-align: center;
+  height: 90vh;
+  margin-bottom: 3vh;
+  justify-content: center;
+}
+
+#experiences h1 {
+  flex: 0.5;
+  padding: 2vh;
+  margin-right: 2vw;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#resume-container {
+  margin-top: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+  width: 90%;
+  height: 70%;
+  overflow: auto;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+
+#resume-img {
+  border-radius: 20px;
+  opacity: 0.5;
+  width: 100%;
+  min-height: 500px;
+  justify-content: center;
+}
+
+#save {
+  justify-self: center;
+  align-self: center;
+  margin-top: 10px;
+  padding: 7px;
+  border-radius: 50%;
+  border: 2px white solid;
+  transition: 0.3s;
+}
+
+#save:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }

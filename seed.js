@@ -8,7 +8,7 @@ const projects = [
     url:
       'https://www.youtube.com/watch?v=p1x6HlvMUgU&list=PLx0iOsdUOUmnTCO5wLzNNeaLbbZLlngp6&index=25&t=0s',
     description:
-      'Spray-R is an augmented reality spray painting app that allows users to create, share, and download nearby art. Move your phone around like a spray can and express yourself digitally!',
+      'Spray-R is an augmented reality spray painting app that allows users to create and share art. Move your phone around like a spray can and express yourself digitally!',
     stack:
       'Node.js, Express, PostgreSQL, Sequelize, React Native, ViroReact, Redux'
   },
@@ -18,7 +18,7 @@ const projects = [
     url: 'https://egyptian-rats-stack.herokuapp.com',
     img: 'ratcon.png',
     description:
-      'Rats is a simple app that allows users to play the popular classic card game Egyptian Rat Screw (a.k.a. Egyptian War) with others online. All of the game logic was written from scratch in Node.js and integrated with socket.io for real-time multiplayer.',
+      'Rats is a simple app that allows users to play the popular classic card game Egyptian Rat Screw (a.k.a. Egyptian War) with real-time online multiplayer.',
     stack: 'Node.js, Express, React, Socket.io'
   },
   {
@@ -27,7 +27,7 @@ const projects = [
     url: 'http://botbuddies.herokuapp.com/',
     img: 'botcon.png',
     description:
-      "A sample CRUD e-commerce site where users can purchase robot friends. Users can log in, and build, edit, and check out orders of valid shipments. Obviously not real, please don't be disappointed when your bot buddy doesn't arrive.",
+      "A sample CRUD e-commerce site where users can purchase robot friends.  Obviously not real, please don't be disappointed when your bot buddy doesn't arrive.",
     stack: 'Node.js, Express, React, Redux, PostgreSQL, Sequelize'
   }
 ]

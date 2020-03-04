@@ -17,8 +17,11 @@ export class Home extends React.Component {
         <hr />
         <Navbar />
         <div id="spacing" />
+        <hr />
         <Projects />
+        <hr />
         <Experiences />
+        <hr />
         <AboutMe />
       </div>
     )

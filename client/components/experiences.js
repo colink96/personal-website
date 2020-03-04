@@ -10,8 +10,18 @@ class DisconnectedExperience extends React.Component {
   render() {
     return (
       <div id="experiences" className="panel" data-color="green">
-        <h1>Experience</h1>
-        {this.props.allExperiences &&
+        <h1>EXPERIENCE</h1>
+        <div id="resume">
+          <div id="resume-container">
+            <img id="resume-img" src="/ColinKim_Resume2020.png" />
+          </div>
+          <div id="dl">
+            <a href="/ColinKim_Resume2020.pdf" download>
+              <img src="/save.png" id="save" />
+            </a>
+          </div>
+        </div>
+        {/* {this.props.allExperiences &&
           this.props.allExperiences.map(experience => {
             return (
               <Experience
@@ -23,7 +33,7 @@ class DisconnectedExperience extends React.Component {
                 description={experience.description}
               />
             )
-          })}
+          })} */}
       </div>
     )
   }
