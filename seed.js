@@ -24,10 +24,10 @@ const projects = [
   {
     title: 'BotBuddies',
     github: 'https://github.com/Object-Oriented-Obfuscators/bot-buddies',
-    url: 'http://botbuddies.herokuapp.com/',
+    url: 'https://botbuddies.herokuapp.com/',
     img: 'botcon.png',
     description:
-      "A sample CRUD e-commerce site where users can purchase robot friends.  Obviously not real, please don't be disappointed when your bot buddy doesn't arrive.",
+      "A CRUD e-commerce site where users can purchase robot friends.  Obviously not real, please don't be disappointed when your bot buddy doesn't arrive.",
     stack: 'Node.js, Express, React, Redux, PostgreSQL, Sequelize'
   }
 ]

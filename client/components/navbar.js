@@ -39,7 +39,7 @@ const Navbar = () => (
           }}
           id="experiencesnav"
         >
-          Experience
+          Resume
         </a>
         <a
           className="navlink"

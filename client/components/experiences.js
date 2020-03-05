@@ -10,30 +10,20 @@ class DisconnectedExperience extends React.Component {
   render() {
     return (
       <div id="experiences" className="panel" data-color="green">
-        <h1>EXPERIENCE</h1>
+        <h1>RESUME</h1>
         <div id="resume">
           <div id="resume-container">
             <img id="resume-img" src="/ColinKim_Resume2020.png" />
           </div>
           <div id="dl">
             <a href="/ColinKim_Resume2020.pdf" download>
-              <img src="/save.png" id="save" />
+              {/* <img src="/save.png" id="save" /> */}
+              <button id="dl-button" type="button">
+                D O W N L O A D
+              </button>
             </a>
           </div>
         </div>
-        {/* {this.props.allExperiences &&
-          this.props.allExperiences.map(experience => {
-            return (
-              <Experience
-                key={experience.id}
-                company={experience.company}
-                date={experience.date}
-                location={experience.location}
-                title={experience.title}
-                description={experience.description}
-              />
-            )
-          })} */}
       </div>
     )
   }

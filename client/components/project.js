@@ -11,7 +11,6 @@ export const Project = props => {
       </a>
       <div className="project-spacer" />
       <span>
-        <a href={props.url}>View Demo</a> |{' '}
         <a href={props.github}>
           <img id="gitcon" src="/gitcon.png" />
         </a>
@@ -20,7 +19,6 @@ export const Project = props => {
       <hr />
       <p>{props.description}</p>
       <div className="project-spacer" />
-      <hr />
       <p>Built using: {props.stack}</p>
     </div>
   )
