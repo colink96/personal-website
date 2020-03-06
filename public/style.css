@@ -265,7 +265,6 @@ form div {
   border: 2px solid white;
   transition: 0.3s;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
 }
 
 .project-spacer {
