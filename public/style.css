@@ -636,6 +636,7 @@ h1 {
 
   #projects-container {
     width: 90%;
+    -webkit-overflow-scrolling: auto;
   }
 
   #resume {
@@ -644,5 +645,9 @@ h1 {
 
   #resume-container {
     width: 90%;
+  }
+
+  #save {
+    width: 150px;
   }
 }
