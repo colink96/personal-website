@@ -29,6 +29,15 @@ const projects = [
     description:
       "A CRUD e-commerce site where users can purchase robot friends.  Obviously not real, please don't be disappointed when your bot buddy doesn't arrive.",
     stack: 'Node.js, Express, React, Redux, PostgreSQL, Sequelize'
+  },
+  {
+    title: 'CLBot',
+    github: 'https://github.com/colink96/DailyCL',
+    url: 'https://www.youtube.com/channel/UCQp8Q_dmfsohrC35lXbEozg',
+    img: 'clbot.png',
+    description:
+      'A script that downloads the top videos from the r/ContagiousLaughter subreddit, edits them into a video, and uploads that video to Youtube. Uploads are meant to go up daily, but I often cancel to save space on my computer.',
+    stack: 'Python, Movie.py, Youtube/Google API, youtube-dl, PRAW'
   }
 ]
 

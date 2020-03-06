@@ -50,6 +50,15 @@ const Navbar = () => (
         >
           About Me
         </a>
+        <a
+          className="navlink"
+          onClick={() => {
+            scrollMe('contact')
+          }}
+          id="contactnav"
+        >
+          Contact Me
+        </a>
       </div>
     </nav>
   </div>

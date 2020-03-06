@@ -152,6 +152,17 @@ form div {
   animation-fill-mode: forwards;
 }
 
+#contactnav {
+  opacity: 0;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
 #home-spacing {
   height: 7vh;
 }
@@ -209,11 +220,6 @@ form div {
 }
 
 #projects-container {
-  background: linear-gradient(
-    -90deg,
-    rgba(164, 204, 252, 0.5) 3%,
-    rgba(138, 191, 255, 0)
-  );
   display: flex;
   /* flex: 1; */
   flex-direction: row;
@@ -509,7 +515,7 @@ h1 {
 #about {
   display: flex;
   flex-direction: column;
-  padding-top: 5vh;
+  padding-top: 2vh;
   text-align: center;
   margin-bottom: 3vh;
   justify-content: center;
@@ -526,7 +532,7 @@ h1 {
 
 #about h1 {
   margin-left: auto;
-  padding: 4vh;
+  padding: 2vh;
   /* position: sticky;
   position: -webkit-sticky;
   top: 40px;
@@ -606,4 +612,9 @@ h1 {
 
 .stack:hover .stack-icon {
   padding: 8px;
+}
+
+#contact img {
+  width: 100px;
+  padding: 5px;
 }
