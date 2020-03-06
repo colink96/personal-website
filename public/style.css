@@ -59,7 +59,7 @@ form div {
 
 .navlink {
   transition: 0.3s;
-  padding: 5px;
+  padding: 3px;
   border-radius: 5px;
 }
 
@@ -79,6 +79,7 @@ form div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   font-family: 'Karla';
 }
 
@@ -225,6 +226,7 @@ form div {
   flex-direction: row;
   /* width: 75vw; */
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
   /* border-right: 2px white solid;
   border-left: 2px white solid; */
   border-radius: 5px;
@@ -251,6 +253,7 @@ form div {
   margin-right: 5px;
   display: flex;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
   min-width: 300px;
   width: 300px;
   min-height: 99%;
@@ -460,6 +463,7 @@ h1 {
   width: 50%;
   height: 70vh;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
   border-radius: 5px;
   vertical-align: middle;
   margin-left: 5vw;
@@ -550,7 +554,7 @@ h1 {
 }
 
 #about-desc {
-  overflow: auto;
+  -webkit-overflow-scrolling: touch;
   text-align: justify;
   flex: 1;
   margin-right: auto;
