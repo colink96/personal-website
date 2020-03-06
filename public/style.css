@@ -27,7 +27,7 @@ label {
 
 nav a {
   display: inline-block;
-  margin: 1em;
+  margin: 10px;
 }
 
 hr {
@@ -74,6 +74,7 @@ form div {
 
 #nav {
   position: -webkit-sticky;
+  white-space: nowrap;
   position: sticky;
   top: 0;
   display: flex;
