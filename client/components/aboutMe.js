@@ -91,6 +91,9 @@ export class AboutMe extends React.Component {
         </div>
         <div id="contact">
           <h1>CONTACT ME</h1>
+          <a href="https://www.linkedin.com/in/colin-minseok-kim/">
+            <img src="linkedin.png" />
+          </a>
           <a href="https://github.com/colink96">
             <img src="gitcon.png" />
           </a>
