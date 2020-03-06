@@ -265,6 +265,7 @@ form div {
   border: 2px solid white;
   transition: 0.3s;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .project-spacer {
@@ -622,4 +623,26 @@ h1 {
 #contact img {
   width: 100px;
   padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  #about-desc {
+    width: 90%;
+  }
+
+  #stack-container {
+    width: 90%;
+  }
+
+  #projects-container {
+    width: 90%;
+  }
+
+  #resume {
+    flex-direction: column;
+  }
+
+  #resume-container {
+    width: 90%;
+  }
 }
