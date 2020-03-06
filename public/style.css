@@ -468,7 +468,6 @@ h1 {
   -webkit-overflow-scrolling: touch;
   border-radius: 5px;
   vertical-align: middle;
-  margin-left: 5vw;
 }
 
 #resume-img {
@@ -647,7 +646,7 @@ h1 {
     width: 90%;
   }
 
-  #save {
-    width: 150px;
+  #dl-button {
+    width: 160px;
   }
 }
