@@ -77,6 +77,8 @@ form div {
 
 #nav {
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   position: -webkit-sticky;
   white-space: nowrap;
   position: sticky;
@@ -86,6 +88,7 @@ form div {
   align-items: center;
   text-align: center;
   font-family: 'Karla';
+  font-size: 12px;
 }
 
 #home {
