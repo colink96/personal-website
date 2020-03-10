@@ -75,6 +75,7 @@ form div {
 }
 
 #nav {
+  width: 100%;
   position: -webkit-sticky;
   white-space: nowrap;
   position: sticky;
@@ -90,7 +91,7 @@ form div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 #home h1 {
