@@ -8,6 +8,7 @@ body {
   text-shadow: 1px 1px #183446;
   max-width: 100%;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: hidden;
 }
 
 a {
