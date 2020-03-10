@@ -6,6 +6,8 @@ body {
   transition: 0.5s ease-in-out;
   font-family: 'Montserrat';
   text-shadow: 1px 1px #183446;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
